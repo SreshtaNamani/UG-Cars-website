@@ -70,6 +70,17 @@ nav a {
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.car-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b7a2f;
+    margin: 15px 0;
 }
 .car-card img {
     width: 100%;
@@ -86,14 +97,17 @@ nav a {
     margin-bottom: 10px;
 }
 button {
+    width: 100%;
     margin-top: 15px;
-    padding: 10px 20px;
-    background-color: black;
+    padding: 12px;
+    background: #111;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
 }
 button:hover {
-    opacity: 0.8;
+    background: #333
 }
