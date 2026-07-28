@@ -12,11 +12,12 @@ body {
 header {
     background-color: white;
     padding: 20px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 nav {
     display: flex;
     justify-content: space-between;
-    alight-items: center;
+    align-items: center;
 }
 nav h1 {
     font-size: 30px;
@@ -29,6 +30,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
 /* Inventory */
 .inventory {
@@ -36,6 +38,7 @@ nav a {
 }
 .inventory h2 {
     text-align: center;
+    font-size: 35px;
     margin-bottom: 40px;
 }
 .car-container {
@@ -47,9 +50,11 @@ nav a {
     background-color: white;
     width: 300px;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 .car-card h3 {
+    font-size: 24px;
     margin-bottom: 15px;
 }
 .car-card p {
@@ -58,6 +63,12 @@ nav a {
 button {
     margin-top: 15px;
     padding: 10px 20px;
+    background-color: black;
+    color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
 }
