@@ -199,6 +199,12 @@ button {
     align-items: center;
     border-radius: 12px;
 }
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
 button:hover {
     background: #333
 }
