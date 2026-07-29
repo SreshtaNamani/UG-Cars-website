@@ -25,25 +25,30 @@
             <section class="inventory">
                 <h2>Available Cars</h2>
                 <div class="filter-bar">
-                    <input type="text" placeholder="Search by brand or model">
-                    <select>
-                        <option>All Brands</option>
-                        <option>Hyundai</option>
-                        <option>Tata</option>
-                        <option>Maruti Suzuki</option>
-                        <option>Honda</option>
+                    <input 
+                        id="searchInput"
+                        type="text"
+                        placeholder="Search by brand or model">
+                    <select id="brandFilter">
+                        <option value="">All Brands</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="tata">Tata</option>
+                        <option value="maruti suzuki">Maruti Suzuki</option>
+                        <option value="honda">Honda</option>
                     </select>
-                    <select>
-                        <option>Fuel Type</option>
-                        <option>Petrol</option>
-                        <option>Diesel</option>
-                        <option>CNG</option>
-                        <option>Electric</option>
+                    <select id="fuelFilter">
+                        <option value="">Fuel Type</option>
+                        <option value="petrol">Petrol</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="cng">CNG</option>
+                        <option value="electric">Electric</option>
                     </select>
-                    <button class="search-btn">Search</button>
+                    <button id="searchBtn" class="search-btn">Search</button>
                 </div>
                 <div class="car-container">
-                    <div class="car-card">
+                    <div class="car-card"
+                         data-brand="hyundai"
+                         data-fuel="petrol">
                         <img src="images/Creta.jpeg.avif" alt="Hyundai Creta">
                         <div class="car-info">
                             <h3>Hyundai Creta SX</h3>
@@ -57,7 +62,9 @@
                         </div>
                         <a href="car-details.html" class="details-btn">View Details</a>
                     </div>
-                    <div class="car-card">
+                    <div class="car-card"
+                         data-brand="tata"
+                         data-fuel="diesel">
                         <img src="images/Nexon.jpeg" alt="Tata Nexon">
                         <div class="car-info">
                             <h3>Tata Nexon SX</h3>
