@@ -1,6 +1,6 @@
 .why-us {
     padding: 60px 50px;
-    background: white;
+    background: #e4f8ff;
 }
 .why-us h2 {
     text-align: center;
@@ -14,7 +14,7 @@
 }
 .feature-card {
     width: 300px;
-    background: #f8f8f8;
+    background: white;
     padding: 25px;
     border-radius: 12px;
     text-align: center;
@@ -22,7 +22,7 @@
 }
 .feature-card i {
     font-size: 35px;
-    color: #d32f2f;
+    color: #000040;
     margin-bottom: 15px;
     display: block;
 }
