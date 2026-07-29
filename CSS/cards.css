@@ -35,6 +35,21 @@
     color: #0b7a2f;
     margin: 15px 0;
 }
+.details-btn {
+    display: block;
+    text-align: centre;
+    text-decoration: none;
+    background: #c62828;
+    color: white;
+    padding: 14px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: .3s;
+    font-weight: bold;
+}
+.details-btn {
+    background: #a81f1f;
+}
 button {
     width: 100%;
     margin-top: 15px;
