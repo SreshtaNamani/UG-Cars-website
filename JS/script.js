@@ -1,52 +1,60 @@
-const searchBtn = document.getElementById("searchBtn");
+const searchInput = document.getElementById("searchInput");
 
-if (searchBtn) {
+if (searchInput) {
 
-    searchBtn.addEventListener("click", function () {
+    searchInput.addEventListener("keydown", function (event) {
 
-        const searchText = document
-            .getElementById("searchInput")
-            .value
-            .toLowerCase();
+        if (event.key === "Enter") {
 
-        const brand = document
-            .getElementById("brandFilter")
-            .value
-            .toLowerCase();
+            searchCars();
 
-        const fuel = document
-            .getElementById("fuelFilter")
-            .value
-            .toLowerCase();
+        }
 
-        const cards = document.querySelectorAll(".car-card");
+    });
 
-        cards.forEach(function(card){
+}
+function searchCars() {
 
-            const title = card.querySelector("h3").textContent.toLowerCase();
+    const searchText = searchInput.value.toLowerCase();
 
-            const cardBrand = card.dataset.brand;
+    const brandFilter = document.getElementById("brandFilter");
+    const fuelFilter = document.getElementById("fuelFilter");
 
-            const cardFuel = card.dataset.fuel;
+    const brand = brandFilter ? brandFilter.value.toLowerCase() : "";
+    const fuel = fuelFilter ? fuelFilter.value.toLowerCase() : "";
 
-            const matchesSearch =
-                title.includes(searchText);
+    const cards = document.querySelectorAll(".car-card");
 
-            const matchesBrand =
-                brand === "" || cardBrand === brand;
+    cards.forEach(function (card) {
 
-            const matchesFuel =
-                fuel === "" || cardFuel === fuel;
+        const title = card.querySelector("h3").textContent.toLowerCase();
 
-            if(matchesSearch && matchesBrand && matchesFuel){
+        const cardBrand = card.dataset.brand.toLowerCase();
+        const cardFuel = card.dataset.fuel.toLowerCase();
 
-                card.style.display = "block";
+        const matchesSearch = title.includes(searchText);
+        const matchesBrand = brand === "" || cardBrand === brand;
+        const matchesFuel = fuel === "" || cardFuel === fuel;
 
-            }else{
+        if (matchesSearch && matchesBrand && matchesFuel) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
 
-                card.style.display = "none";
+    });
 
-            }
+}
+const mainImage = document.querySelector(".main-image");
+const thumbnails = document.querySelectorAll(".thumbnail-row img");
+
+if (mainImage && thumbnails.length > 0) {
+
+    thumbnails.forEach(function (thumb) {
+
+        thumb.addEventListener("click", function () {
+
+            mainImage.src = thumb.src;
 
         });
 

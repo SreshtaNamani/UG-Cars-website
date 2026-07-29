@@ -14,6 +14,12 @@
                 <a href="index.html" class="logo">
                     <img src="images/logo.png" alt="UG Cars Logo">
                 </a>
+                <div class="nav-search">
+                    <input
+                        id="searchInput"
+                        type="text"
+                        placeholder="Search cars...">
+                </div>
                 <ul>
                     <li><a href="#">Inventory</a></li>
                     <li><a href="#">Sell Car</a></li>
@@ -27,10 +33,6 @@
             <section class="inventory">
                 <h2>Available Cars</h2>
                 <div class="filter-bar">
-                    <input 
-                        id="searchInput"
-                        type="text"
-                        placeholder="Search by brand or model">
                     <select id="brandFilter">
                         <option value="">All Brands</option>
                         <option value="hyundai">Hyundai</option>
@@ -45,8 +47,6 @@
                         <option value="cng">CNG</option>
                         <option value="electric">Electric</option>
                     </select>
-                    <button id="searchBtn" class="search-btn">Search</button>
-                </div>
                 <div class="car-container">
                     <div class="car-card"
                          data-brand="hyundai"
