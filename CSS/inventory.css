@@ -1,7 +1,3 @@
-/* ==========================
-   Inventory Section
-========================== */
-
 .inventory {
     padding: 50px;
 }
@@ -11,8 +7,6 @@
     font-size: 35px;
     margin-bottom: 40px;
 }
-
-/* Filters */
 
 .filter-bar {
     display: flex;
