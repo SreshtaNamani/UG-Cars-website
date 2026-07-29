@@ -30,7 +30,7 @@
     margin-bottom: 10px;
 }
 .price {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     color: #0b7a2f;
     margin: 15px 0;
@@ -39,7 +39,7 @@ button {
     width: 100%;
     margin-top: 15px;
     padding: 12px;
-    background: #111;
+    background: #c62828;
     color: white;
     border: none;
     border-radius: 5px;
@@ -48,5 +48,11 @@ button {
     transition: background 0.3s ease;
 }
 button:hover {
-    background: #333
+    background: #a61f1f
+}
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 20px 0;
 }
