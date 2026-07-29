@@ -24,3 +24,8 @@ nav a {
     color: black;
     font-weight: bold;
 }
+.logo img {
+    height: 65px;      /* Adjust as needed */
+    width: auto;
+    display: block;
+}
