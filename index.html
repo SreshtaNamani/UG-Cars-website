@@ -31,58 +31,76 @@
         <!--Inventory Section-->
         <main>
             <section class="inventory">
-                <h2>Available Cars</h2>
-                <div class="filter-bar">
-                    <select id="brandFilter">
-                        <option value="">All Brands</option>
-                        <option value="hyundai">Hyundai</option>
-                        <option value="tata">Tata</option>
-                        <option value="maruti suzuki">Maruti Suzuki</option>
-                        <option value="honda">Honda</option>
-                    </select>
-                    <select id="fuelFilter">
-                        <option value="">Fuel Type</option>
-                        <option value="petrol">Petrol</option>
-                        <option value="diesel">Diesel</option>
-                        <option value="cng">CNG</option>
-                        <option value="electric">Electric</option>
-                    </select>
-                </div>
-                <div class="car-container">
-                    <div class="car-card"
-                         data-brand="hyundai"
-                         data-fuel="petrol">
-                        <img src="images/Creta.jpeg.avif" alt="Hyundai Creta">
-                        <div class="car-info">
-                            <h3>Hyundai Creta SX</h3>
-                            <p class="price">₹12,50,000</p>
-                            <p>Year: 2022</p>
-                            <p>Fuel: Petrol</p>
-                            <p>Transmission: Automatic</p>
-                            <p>Distance covered: 28,000 km</p>
-                            <p>Owners: First owner</p>
-                            <p>City: Hyderabad</p>
+                <div class="inventory-layout">
+                    <!--Left sidebar-->
+                    <aside class="filter-sidebar">
+                        <h3>Filters</h3>
+                        <div class="filter-section">
+                            <h4>Brands + Models</h4>
+                            <label><input type="checkbox"> Hyundai</label>
+                            <label><input type="checkbox"> Tata</label>
+                            <label><input type="checkbox"> Honda</label>
+                            <label><input type="checkbox"> Maruti Suzuki</label>
                         </div>
-                        <a href="car-details.html" class="details-btn">View Details</a>
-                    </div>
-                    <div class="car-card"
-                         data-brand="tata"
-                         data-fuel="diesel">
-                        <img src="images/Nexon.jpeg" alt="Tata Nexon">
-                        <div class="car-info">
-                            <h3>Tata Nexon SX</h3>
-                            <p class="price">₹9,00,000</p>
-                            <p>Year: 2021</p>
-                            <p>Fuel: Diesel</p>
-                            <p>Transmission: Manual</p>
-                            <p>Distance covered: 54,000 km</p>
-                            <p>Owners: First owner</p>
-                            <p>City: Hyderabad</p>
+                        <div class="filter-section">
+                            <h4>Fuel Type</h4>
+                            <label><input type="checkbox"> Petrol</label>
+                            <label><input type="checkbox"> Diesel</label>
+                            <label><input type="checkbox"> CNG</label>
+                            <label><input type="checkbox"> Electric</label>
                         </div>
-                        <a href="car-details.html" class="details-btn">View Details</a>
+                        <div class="filter-section">
+                            <h4>Year</h4>
+                            <label><input type="radio" name="year"> 2024 & Above</label>
+                            <label><input type="radio" name="year"> 2022 & Above</label>
+                            <label><input type="radio" name="year"> 2020 & Above</label>
+                            <label><input type="radio" name="year"> 2018 & Above</label>
+                            <label><input type="radio" name="year"> 2016 & Above</label>
+                            <label><input type="radio" name="year"> 2014 & Above</label>
+                        </div>
+                    </aside>
+                    <!--Right Side-->
+                    <div class="inventory-content">
+                        <h2>Available Cars</h2>
+                        <div class="car-container">
+                            <div class="car-card"
+                                 data-brand="hyundai"
+                                 data-fuel="petrol">
+                                <img src="images/Creta.jpeg.avif" alt="Hyundai Creta">
+                                <div class="car-info">
+                                    <h3>Hyundai Creta SX</h3>
+                                    <p class="price">₹12,50,000</p>
+                                    <p>Year: 2022</p>
+                                    <p>Fuel: Petrol</p>
+                                    <p>Transmission: Automatic</p>
+                                    <p>Distance Covered: 28,000 km</p>
+                                    <p>Owners: First owner</p>
+                                    <p>City: Hyderabad</p>
+                                </div>
+                                <a href="car-details.html" class="details-btn">
+                                    View Details
+                                </a>
+                            </div>
+                            <div class="car-card"
+                                 data-brand="tata"
+                                 data-fuel="diesel">
+                                 <img src="images/Nexon.jpeg" alt="Tata Nexon">
+                                 <div class="car-info">
+                                    <h3>Tata Nexon</h3>
+                                    <p class="price">₹9,00,000</p>
+                                    <p>Year: 2021</p>
+                                    <p>Fuel: Diesel</p>
+                                    <p>transmission: Manual</p>
+                                    <p>Distance Covered: 54,000 km</p>
+                                    <p>City: Hyderabad</p>
+                                 </div> 
+                                 <a href="car-details.html" class="details-btn">View Details</a>                          
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+
             <section class="why-us">
                 <h2>Why choose UG Cars?</h2>
                 <div class="features">
