@@ -1,56 +1,64 @@
+// ==============================
+// LIVE SEARCH + FILTERS
+// ==============================
+
+// Get elements
 const searchInput = document.getElementById("searchInput");
+const brandFilters = document.querySelectorAll(".brand-filter");
+const fuelFilters = document.querySelectorAll(".fuel-filter");
+const cards = document.querySelectorAll(".car-card");
 
+// Search while typing
 if (searchInput) {
-
-    searchInput.addEventListener("input", searchCars);
-
+    searchInput.addEventListener("input", filterCars);
 }
 
-const brandFilter = document.getElementById("brandFilter");
+// Brand filter
+brandFilters.forEach(filter => {
+    filter.addEventListener("change", filterCars);
+});
 
-if (brandFilter) {
+// Fuel filter
+fuelFilters.forEach(filter => {
+    filter.addEventListener("change", filterCars);
+});
 
-    brandFilter.addEventListener("change", searchCars);
+// Filter function
+function filterCars() {
 
-}
+    const searchText = searchInput ? searchInput.value.toLowerCase() : "";
 
-const fuelFilter = document.getElementById("fuelFilter");
+    const selectedBrands = [...brandFilters]
+        .filter(filter => filter.checked)
+        .map(filter => filter.value);
 
-if (fuelFilter) {
+    const selectedFuels = [...fuelFilters]
+        .filter(filter => filter.checked)
+        .map(filter => filter.value);
 
-    fuelFilter.addEventListener("change", searchCars);
-
-}
-
-function searchCars() {
-
-    const searchText = searchInput.value.toLowerCase();
-
-    const brand = brandFilter ? brandFilter.value.toLowerCase() : "";
-
-    const fuel = fuelFilter ? fuelFilter.value.toLowerCase() : "";
-
-    const cards = document.querySelectorAll(".car-card");
-
-    cards.forEach(function(card){
+    cards.forEach(card => {
 
         const title = card.querySelector("h3").textContent.toLowerCase();
 
-        const cardBrand = card.dataset.brand.toLowerCase();
+        const brand = card.dataset.brand.toLowerCase();
 
-        const cardFuel = card.dataset.fuel.toLowerCase();
+        const fuel = card.dataset.fuel.toLowerCase();
 
         const matchesSearch = title.includes(searchText);
 
-        const matchesBrand = brand === "" || cardBrand === brand;
+        const matchesBrand =
+            selectedBrands.length === 0 ||
+            selectedBrands.includes(brand);
 
-        const matchesFuel = fuel === "" || cardFuel === fuel;
+        const matchesFuel =
+            selectedFuels.length === 0 ||
+            selectedFuels.includes(fuel);
 
-        if(matchesSearch && matchesBrand && matchesFuel){
+        if (matchesSearch && matchesBrand && matchesFuel) {
 
             card.style.display = "block";
 
-        }else{
+        } else {
 
             card.style.display = "none";
 
@@ -59,6 +67,11 @@ function searchCars() {
     });
 
 }
+
+// ==============================
+// IMAGE GALLERY
+// ==============================
+
 const mainImage = document.querySelector(".main-image");
 const thumbnails = document.querySelectorAll(".thumbnail-row img");
 
