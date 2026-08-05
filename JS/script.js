@@ -1,29 +1,20 @@
-// ==============================
-// LIVE SEARCH + FILTERS
-// ==============================
-
-// Get elements
 const searchInput = document.getElementById("searchInput");
 const brandFilters = document.querySelectorAll(".brand-filter");
 const fuelFilters = document.querySelectorAll(".fuel-filter");
 const cards = document.querySelectorAll(".car-card");
 
-// Search while typing
 if (searchInput) {
     searchInput.addEventListener("input", filterCars);
 }
 
-// Brand filter
 brandFilters.forEach(filter => {
     filter.addEventListener("change", filterCars);
 });
 
-// Fuel filter
 fuelFilters.forEach(filter => {
     filter.addEventListener("change", filterCars);
 });
 
-// Filter function
 function filterCars() {
 
     const searchText = searchInput ? searchInput.value.toLowerCase() : "";
@@ -67,11 +58,6 @@ function filterCars() {
     });
 
 }
-
-// ==============================
-// IMAGE GALLERY
-// ==============================
-
 const mainImage = document.querySelector(".main-image");
 const thumbnails = document.querySelectorAll(".thumbnail-row img");
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Finance | UG Cars</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -16,11 +17,95 @@
             <li><a href="index.html">Buy Car</a></li>
             <li><a href="sell-car.html">Sell Car</a></li>
             <li><a href="finance.html">Finance</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="exchange.html">Exchange</a></li>
+            <li><a href="contact.html">+91 99480 62666</a></li>
         </ul>
     </nav>
 </header>
 <main>
+    <section class="finance-hero">
+        <div class="finance-text">
+            <h1>Finance Your Dream Car</h1>
+            <p>
+                Get instant finance assistance with competitive interest rates, flexible EMI options, quick approvals through UG Cars.
+            </p>
+            <a href="#finance-form" class="details-btn">Apply Now</a>
+        </div>
+        <div class="finance-image">
+            <img src="images/finance-banner.jpg" alt="Car Finance">
+        </div>
+    </section>
+    <section class="finance-benefits">
+        <h2>Why Finance Through UG Cars?</h2>
+        <div class="benefit-grid">
+            <div class="benefit-card">
+                <i class="fa-solid fa-percent"></i>
+                <h3>Low Interest Rates</h3>
+                <p>Competitive rates from trusted banking partners.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Fast Approval</h3>
+                <p>Get approval within a short time after document verification.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <h3>Minimal Documentation</h3>
+                <p>Simple documentation process with full assistance.</p>
+            </div>
+        </div>
+    </section>
+    <section class="finance-form-section" id="finance-form">
+        <h2>Finance Enquiry Form</h2>
+        <p class="form-subtitle">
+            Fill in your details and our finance team will contact you shortly.
+        </p>
+        <form class="finance-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="example@email.com">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="Ex: Hyderabad">
+            </div>
+            <div class="form-group">
+                <label for="car">Interested Vehicle</label>
+                <select id="car">
+                    <option>Select a Car</option>
+                    <option>Hyundai Creta SX</option>
+                    <option>Tata Nexon</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="occupation">Occupation</label>
+                <input type="text" id="occupation" placeholder="Ex: Software Engineer">
+            </div>
+            <div class="form-group">
+                <label for="income">Monthly Income</label>
+                <input type="number" id="income" placeholder="₹">
+            </div>
+            <div class="form-group">
+                <label for="loan">Preferred Loan Amount</label>
+                <input type="number" id="loan" placeholder="₹">
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Message</label>
+                <textarea id="message" rows="5" placeholder="Anything you'd like us to know?"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+                Submit Enquiry
+            </button>
+        </form>
+    </section>
 </main>
 <script src="JS/script.js"></script>
 </body>
