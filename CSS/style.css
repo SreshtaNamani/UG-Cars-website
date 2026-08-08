@@ -271,3 +271,39 @@
     border-radius:18px;
     box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
+/* ===========================
+   SELL CAR BENEFITS
+=========================== */
+
+.sell-benefits {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 30px;
+}
+
+.sell-benefits h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.sell-benefits .benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-content: center;
+}
+
+.sell-benefits .benefit-card {
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.sell-benefits .benefit-card:hover {
+    transform: translateY(-8px);
+}
