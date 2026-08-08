@@ -65,6 +65,175 @@
             </div>
         </div>
     </section>
+    <section class="sell-form-section" id="sell-form">
+        <h2>Sell Your Car</h2>
+        <p class="form-subtitle">
+            Tell us about your car and our team will get in touch with you.
+        </p>
+        <form class="sell-form">
+            <!-- Owner Details -->
+            <h3 class="form-heading">Owner Details</h3>
+            <div class="form-group">
+                <label for="ownerName">Full Name</label>
+                <input
+                    type="text"
+                    id="ownerName"
+                    name="ownerName"
+                    placeholder="Enter your full name"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="ownerPhone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="ownerPhone"
+                    name="ownerPhone"
+                    placeholder="+91 XXXXX XXXXX"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="ownerEmail">Email Address</label>
+                <input
+                    type="email"
+                    id="ownerEmail"
+                    name="ownerEmail"
+                    placeholder="example@email.com">
+            </div>
+            <!-- Vehicle Details -->
+            <h3 class="form-heading full-width">
+                Vehicle Details
+            </h3>
+            <div class="form-group">
+                <label for="brand">Brand</label>
+                <select id="brand" name="brand" required>
+                    <option value="">Select Brand</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="tata">Tata</option>
+                    <option value="honda">Honda</option>
+                    <option value="maruti suzuki">Maruti Suzuki</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="kia">Kia</option>
+                    <option value="mahindra">Mahindra</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="model">Model</label>
+                <input
+                    type="text"
+                    id="model"
+                    name="model"
+                    placeholder="e.g. Creta">
+            </div>
+            <div class="form-group">
+                <label for="variant">Variant</label>
+                <input
+                    type="text"
+                    id="variant"
+                    name="variant"
+                    placeholder="e.g. SX">
+            </div>
+            <div class="form-group">
+                <label for="year">Year</label>
+                <select id="year" name="year" required>
+                    <option value="">Select Year</option>
+                    <option>2026</option>
+                    <option>2025</option>
+                    <option>2024</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fuel">Fuel Type</label>
+                <select id="fuel" name="fuel" required>
+                    <option value="">Select Fuel Type</option>
+                    <option>Petrol</option>
+                    <option>Diesel</option>
+                    <option>CNG</option>
+                    <option>Electric</option>
+                    <option>Hybrid</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="transmission">Transmission</label>
+                <select id="transmission" name="transmission">
+                    <option value="">Select Transmission</option>
+                    <option>Manual</option>
+                    <option>Automatic</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="kilometers">Kilometers Driven</label>
+                <input
+                    type="number"
+                    id="kilometers"
+                    name="kilometers"
+                    placeholder="e.g. 28000">
+            </div>
+            <div class="form-group">
+                <label for="owners">Number of Owners</label>
+                <select id="owners" name="owners">
+                    <option value="">Select</option>
+                    <option>1st Owner</option>
+                    <option>2nd Owner</option>
+                    <option>3rd Owner</option>
+                    <option>4+ Owners</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="expectedPrice">Expected Price</label>
+                <input
+                    type="number"
+                    id="expectedPrice"
+                    name="expectedPrice"
+                    placeholder="₹">
+            </div>
+            <!-- Images -->
+            <h3 class="form-heading full-width">
+                Upload Vehicle Images
+            </h3>
+            <div class="form-group full-width">
+                <label for="carImages">
+                    Upload Photos
+                </label>
+                <input
+                    type="file"
+                    id="carImages"
+                    name="carImages"
+                    accept="image/*"
+                    multiple>
+                <small>
+                    You can upload multiple images of your vehicle.
+                </small>
+            </div>
+            <!-- Additional Information -->
+            <h3 class="form-heading full-width">
+                Additional Information
+            </h3>
+            <div class="form-group full-width">
+                <label for="remarks">
+                    Additional Remarks
+                </label>
+                    <textarea
+                    id="remarks"
+                    name="remarks"
+                    rows="5"
+                    placeholder="Tell us anything else about your vehicle..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+                Submit Request
+            </button>
+        </form>
+    </section>
 </main>
 <script src="JS/script.js"></script>
 </body>
