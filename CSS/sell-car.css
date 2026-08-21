@@ -1,0 +1,427 @@
+/* =========================================================
+   UG CARS — SELL CAR PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.sell-hero {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 90px 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    background: #f5f7fb;
+}
+
+.sell-text {
+    max-width: 600px;
+}
+
+.section-tag {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: #00a9dc;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.sell-text h1 {
+    margin: 0 0 22px;
+
+    color: #111333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 46px;
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+.sell-text p {
+    margin: 0 0 32px;
+
+    color: #555b70;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.sell-image {
+    width: 100%;
+    height: 380px;
+
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.sell-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Hero button */
+
+.sell-hero .details-btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #08094f;
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+.sell-hero .details-btn:hover {
+    background: #00a9dc;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   WHY SELL THROUGH US
+   ========================================================= */
+
+.sell-benefits {
+    width: 100%;
+
+    padding: 90px 40px;
+
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.sell-benefits h2 {
+    margin: 0 auto 50px;
+
+    color: #111333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.benefit-grid {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+.benefit-card {
+    background: #ffffff;
+
+    border: 1px solid #e3e6ef;
+
+    border-radius: 16px;
+
+    padding: 35px 25px;
+
+    box-shadow: 0 8px 25px rgba(8, 9, 79, 0.06);
+
+    transition: all 0.25s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 14px 35px rgba(8, 9, 79, 0.12);
+}
+
+.benefit-card i {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #00a9dc;
+
+    font-size: 32px;
+}
+
+.benefit-card h3 {
+    margin: 0 0 12px;
+
+    color: #111333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.benefit-card p {
+    margin: 0;
+
+    color: #606579;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   SELL FORM
+   ========================================================= */
+
+.sell-form-section {
+    width: 100%;
+
+    padding: 90px 20px;
+
+    background: #f5f7fb;
+}
+
+.sell-form-section > h2 {
+    margin: 0 0 12px;
+
+    text-align: center;
+
+    color: #111333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.sell-form-section .form-subtitle {
+    margin: 0 auto 45px;
+
+    text-align: center;
+
+    color: #606579;
+
+    font-size: 17px;
+}
+
+.sell-form {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 45px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e6ef;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(8, 9, 79, 0.08);
+}
+
+.sell-form .form-heading {
+    margin: 10px 0 25px;
+
+    color: #111333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.sell-form .form-heading.full-width {
+    margin-top: 30px;
+}
+
+
+/* Form fields */
+
+.sell-form .form-group {
+    margin-bottom: 22px;
+}
+
+.sell-form .form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #111333;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sell-form .form-group input,
+.sell-form .form-group select,
+.sell-form .form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    border: 1px solid #d8dce6;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #111333;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 15px;
+
+    transition: all 0.2s ease;
+}
+
+.sell-form .form-group input:focus,
+.sell-form .form-group select:focus,
+.sell-form .form-group textarea:focus {
+    border-color: #00a9dc;
+
+    box-shadow: 0 0 0 3px rgba(0, 169, 220, 0.1);
+}
+
+.sell-form .form-group textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.sell-form .form-group small {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #777d90;
+
+    font-size: 13px;
+}
+
+
+/* Submit */
+
+.sell-form .submit-btn {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #08094f;
+    color: #ffffff;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.sell-form .submit-btn:hover {
+    background: #00a9dc;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .sell-hero {
+        grid-template-columns: 1fr;
+
+        padding: 70px 30px;
+
+        gap: 40px;
+
+        text-align: center;
+    }
+
+    .sell-text {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .sell-image {
+        height: 320px;
+    }
+
+    .benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .sell-hero {
+        padding: 55px 20px;
+    }
+
+    .sell-text h1 {
+        font-size: 34px;
+    }
+
+    .sell-text p {
+        font-size: 16px;
+    }
+
+    .sell-benefits {
+        padding: 65px 20px;
+    }
+
+    .sell-benefits h2,
+    .sell-form-section > h2 {
+        font-size: 29px;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sell-form {
+        padding: 25px 20px;
+    }
+
+    .sell-image {
+        height: 240px;
+    }
+}

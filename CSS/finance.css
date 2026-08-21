@@ -1,0 +1,505 @@
+/* =========================================================
+   UG CARS — FINANCE PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.finance-hero {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 90px 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    background: #f5f7fb;
+}
+
+.finance-text {
+    max-width: 600px;
+}
+
+
+/* Small blue label */
+
+.finance-text .section-tag {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: #00a9dc;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* Main heading */
+
+.finance-text h1 {
+    margin: 0 0 22px;
+
+    color: #111333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 46px;
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+
+/* Description */
+
+.finance-text p {
+    margin: 0 0 32px;
+
+    color: #555b70;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* Finance image */
+
+.finance-image {
+    width: 100%;
+    height: 380px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+.finance-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Button */
+
+.finance-hero .details-btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #08094f;
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+.finance-hero .details-btn:hover {
+    background: #00a9dc;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   WHY FINANCE THROUGH UG CARS
+   ========================================================= */
+
+.finance-benefits {
+    width: 100%;
+
+    padding: 90px 40px;
+
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.finance-benefits h2 {
+    margin: 0 auto 50px;
+
+    color: #111333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.finance-benefits .benefit-grid {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.finance-benefits .benefit-card {
+    background: #ffffff;
+
+    border: 1px solid #e3e6ef;
+
+    border-radius: 16px;
+
+    padding: 35px 25px;
+
+    box-shadow: 0 8px 25px rgba(8, 9, 79, 0.06);
+
+    transition: all 0.25s ease;
+}
+
+.finance-benefits .benefit-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 14px 35px rgba(8, 9, 79, 0.12);
+}
+
+.finance-benefits .benefit-card i {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #00a9dc;
+
+    font-size: 32px;
+}
+
+.finance-benefits .benefit-card h3 {
+    margin: 0 0 12px;
+
+    color: #111333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.finance-benefits .benefit-card p {
+    margin: 0;
+
+    color: #606579;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FINANCE FORM
+   ========================================================= */
+
+.finance-form-section {
+    width: 100%;
+
+    padding: 90px 20px;
+
+    background: #f5f7fb;
+}
+
+.finance-form-section > h2 {
+    margin: 0 0 12px;
+
+    text-align: center;
+
+    color: #111333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.finance-form-section .form-subtitle {
+    margin: 0 auto 45px;
+
+    text-align: center;
+
+    color: #606579;
+
+    font-size: 17px;
+}
+
+.finance-form {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 45px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e6ef;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(8, 9, 79, 0.08);
+}
+
+
+/* Form groups */
+
+.finance-form .form-group {
+    margin-bottom: 22px;
+}
+
+.finance-form .form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #111333;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.finance-form .form-group input,
+.finance-form .form-group select,
+.finance-form .form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    border: 1px solid #d8dce6;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #111333;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 15px;
+
+    transition: all 0.2s ease;
+}
+
+.finance-form .form-group input:focus,
+.finance-form .form-group select:focus,
+.finance-form .form-group textarea:focus {
+    border-color: #00a9dc;
+
+    box-shadow: 0 0 0 3px rgba(0, 169, 220, 0.1);
+}
+
+.finance-form .form-group textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+
+/* Submit */
+
+.finance-form .submit-btn {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #08094f;
+    color: #ffffff;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.finance-form .submit-btn:hover {
+    background: #00a9dc;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DOCUMENTS REQUIRED
+   ========================================================= */
+
+.documents-section {
+    width: 100%;
+
+    padding: 90px 40px;
+
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.documents-section h2 {
+    margin: 0 0 50px;
+
+    color: #111333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.documents-grid {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.document-card {
+    padding: 30px 25px;
+
+    background: #f8f9fc;
+
+    border: 1px solid #e3e6ef;
+
+    border-radius: 14px;
+
+    transition: all 0.25s ease;
+}
+
+.document-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(8, 9, 79, 0.08);
+}
+
+.document-card i {
+    margin-bottom: 15px;
+
+    color: #00a9dc;
+
+    font-size: 30px;
+}
+
+.document-card h3 {
+    margin: 12px 0 8px;
+
+    color: #111333;
+
+    font-family: "Manrope", sans-serif;
+}
+
+.document-card p {
+    margin: 0;
+
+    color: #606579;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .finance-hero {
+        grid-template-columns: 1fr;
+
+        padding: 70px 30px;
+
+        gap: 40px;
+
+        text-align: center;
+    }
+
+    .finance-text {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .finance-image {
+        height: 320px;
+    }
+
+    .finance-benefits .benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .documents-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .finance-hero {
+        padding: 55px 20px;
+    }
+
+    .finance-text h1 {
+        font-size: 34px;
+    }
+
+    .finance-text p {
+        font-size: 16px;
+    }
+
+    .finance-benefits,
+    .documents-section {
+        padding: 65px 20px;
+    }
+
+    .finance-benefits h2,
+    .finance-form-section > h2,
+    .documents-section h2 {
+        font-size: 29px;
+    }
+
+    .finance-benefits .benefit-grid,
+    .documents-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .finance-form {
+        padding: 25px 20px;
+    }
+
+    .finance-image {
+        height: 240px;
+    }
+}
