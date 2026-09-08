@@ -1,0 +1,1 @@
+console.log("UG Cars Admin loaded successfully");
