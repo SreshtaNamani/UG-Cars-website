@@ -472,3 +472,157 @@ body.admin-page {
         font-size: 30px;
     }
 }
+
+/* =========================================================
+   ADMIN INVENTORY
+   ========================================================= */
+
+.admin-add-car {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 12px 18px;
+
+    background: #08094f;
+    color: white;
+
+    border-radius: 8px;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+}
+
+.admin-add-car:hover {
+    background: #08a9e0;
+}
+
+.admin-inventory-card {
+    background: #ffffff;
+    border: 1px solid #e1e5eb;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(5,5,74,0.05);
+    overflow: hidden;
+}
+
+.inventory-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+.inventory-table th {
+    padding: 16px 22px;
+
+    background: #f8f9fb;
+
+    color: #6d7485;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+
+    border-bottom: 1px solid #e1e5eb;
+}
+
+.inventory-table td {
+    padding: 18px 22px;
+
+    color: #111936;
+    font-size: 14px;
+
+    border-bottom: 1px solid #eef1f5;
+}
+
+.inventory-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.inventory-vehicle {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.inventory-vehicle img {
+    width: 70px;
+    height: 50px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+}
+
+.inventory-vehicle strong {
+    display: block;
+    margin-bottom: 4px;
+
+    color: #111936;
+    font-size: 14px;
+}
+
+.inventory-vehicle span {
+    color: #7b8393;
+    font-size: 12px;
+}
+
+.inventory-status {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.inventory-status.available {
+    background: #e8f8ef;
+    color: #1ca65a;
+}
+
+.inventory-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.inventory-actions button {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    border: 1px solid #e1e5eb;
+    border-radius: 7px;
+
+    background: #ffffff;
+    color: #6d7485;
+
+    font-size: 13px;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.inventory-actions button:hover {
+    background: #f1f4f8;
+    color: #08094f;
+}
+
+.inventory-actions .inventory-delete:hover {
+    background: #fff0f1;
+    color: #d9363e;
+}

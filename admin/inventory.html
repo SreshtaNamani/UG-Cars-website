@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inventory | UG Cars</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body class="admin-page">
+
+    <div class="admin-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo">
+                <img src="../image.png" alt="UG Cars">
+            </div>
+
+            <nav class="admin-nav">
+
+                <a href="admin.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="inventory.html" class="active">
+                    <i class="fa-solid fa-car"></i>
+                    <span>Inventory</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <span>Finance Enquiries</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact Enquiries</span>
+                </a>
+
+            </nav>
+
+            <div class="admin-sidebar-bottom">
+
+                <a href="../index.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Back to Website</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="admin-content">
+
+            <!-- TOP BAR -->
+            <div class="admin-topbar">
+
+                <div>
+                    <p class="admin-welcome">Manage your dealership</p>
+                    <h1>Inventory</h1>
+                </div>
+
+                <div class="admin-user">
+
+                    <div class="admin-user-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+                        <strong>Admin</strong>
+                        <span>UG Cars</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INVENTORY HEADER -->
+            <section class="admin-section">
+
+                <div class="admin-section-header">
+
+                    <div>
+                        <h2>Vehicles</h2>
+                        <p>View and manage vehicles in your inventory.</p>
+                    </div>
+
+                    <a href="#" class="admin-add-car">
+                        <i class="fa-solid fa-plus"></i>
+                        Add New Car
+                    </a>
+
+                </div>
+
+
+                <!-- INVENTORY TABLE -->
+                <div class="admin-inventory-card">
+
+                    <div class="inventory-table-wrapper">
+
+                        <table class="inventory-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Vehicle</th>
+                                    <th>Price</th>
+                                    <th>Fuel</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        <div class="inventory-vehicle">
+
+                                            <img
+                                                src="../images/Nexon.jpeg"
+                                                alt="Tata Nexon">
+
+                                            <div>
+                                                <strong>Tata Nexon</strong>
+                                                <span>2023 • Petrol</span>
+                                            </div>
+
+                                        </div>
+                                    </td>
+
+                                    <td>₹9.50 Lakh</td>
+
+                                    <td>Petrol</td>
+
+                                    <td>
+                                        <span class="inventory-status available">
+                                            Available
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <div class="inventory-actions">
+
+                                            <button type="button"
+                                                class="inventory-edit">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+
+                                            <button type="button"
+                                                class="inventory-delete">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <div class="inventory-vehicle">
+
+                                            <img
+                                                src="../images/Creta.jpeg.avif"
+                                                alt="Hyundai Creta">
+
+                                            <div>
+                                                <strong>Hyundai Creta</strong>
+                                                <span>2023 • Petrol</span>
+                                            </div>
+
+                                        </div>
+                                    </td>
+
+                                    <td>₹14.20 Lakh</td>
+
+                                    <td>Petrol</td>
+
+                                    <td>
+                                        <span class="inventory-status available">
+                                            Available
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <div class="inventory-actions">
+
+                                            <button type="button"
+                                                class="inventory-edit">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </button>
+
+                                            <button type="button"
+                                                class="inventory-delete">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
