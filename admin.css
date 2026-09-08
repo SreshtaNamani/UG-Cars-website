@@ -2,7 +2,7 @@
    UG CARS — ADMIN DASHBOARD
    ========================================================= */
 
-.admin-page {
+body.admin-page {
     min-height: 100vh;
     background: #f5f7fa;
     color: #111936;
@@ -12,7 +12,7 @@
    ADMIN LAYOUT
    ========================================================= */
 
-.admin-layout {
+.admin-page .admin-layout {
     display: grid;
     grid-template-columns: 265px 1fr;
     min-height: 100vh;
@@ -22,36 +22,33 @@
    SIDEBAR
    ========================================================= */
 
-.admin-sidebar {
+.admin-page .admin-sidebar {
     background: #05054a;
     color: white;
     padding: 30px 22px;
     min-height: 100vh;
-
     position: sticky;
     top: 0;
     height: 100vh;
 }
 
-/* Override global website NAV styles */
-
-.admin-sidebar .admin-nav {
+.admin-page .admin-sidebar .admin-nav {
     display: block;
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
     background: transparent;
 }
 
-.admin-sidebar .admin-nav a {
+.admin-page .admin-sidebar .admin-nav a {
     display: flex;
     align-items: center;
     gap: 12px;
 
     width: 100%;
     padding: 13px 15px;
-    margin-bottom: 7px;
+    margin: 0 0 7px;
 
     border-radius: 9px;
 
@@ -64,39 +61,37 @@
     transition: 0.2s ease;
 }
 
-.admin-sidebar .admin-nav a:hover,
-.admin-sidebar .admin-nav a.active {
+.admin-page .admin-sidebar .admin-nav a:hover,
+.admin-page .admin-sidebar .admin-nav a.active {
     background: rgba(255,255,255,0.1);
     color: white;
 }
 
-.admin-sidebar .admin-nav a i {
+.admin-page .admin-sidebar .admin-nav a i {
     width: 20px;
     text-align: center;
 }
 
-/* Logo */
-
-.admin-logo {
+.admin-page .admin-logo {
     width: 100%;
     margin-bottom: 35px;
 }
 
-.admin-logo img {
+.admin-page .admin-logo img {
     width: 210px;
     height: auto;
+    display: block;
 }
 
 /* Bottom link */
 
-.admin-sidebar-bottom {
+.admin-page .admin-sidebar-bottom {
     margin-top: 25px;
     padding-top: 25px;
-
     border-top: 1px solid rgba(255,255,255,0.12);
 }
 
-.admin-sidebar-bottom a {
+.admin-page .admin-sidebar-bottom a {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -109,7 +104,7 @@
     font-size: 15px;
 }
 
-.admin-sidebar-bottom a:hover {
+.admin-page .admin-sidebar-bottom a:hover {
     color: #08a9e0;
 }
 
@@ -117,7 +112,7 @@
    MAIN CONTENT
    ========================================================= */
 
-.admin-content {
+.admin-page .admin-content {
     padding: 45px;
     min-width: 0;
 }
@@ -126,26 +121,22 @@
    TOP BAR
    ========================================================= */
 
-.admin-topbar {
+.admin-page .admin-topbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     margin-bottom: 35px;
 }
 
-.admin-welcome {
+.admin-page .admin-welcome {
     margin: 0 0 5px;
-
     color: #555b70;
     font-size: 17px;
 }
 
-.admin-topbar h1 {
+.admin-page .admin-topbar h1 {
     margin: 0;
-
     color: #08094f;
-
     font-family: "Manrope", sans-serif;
     font-size: 38px;
     font-weight: 800;
@@ -153,13 +144,13 @@
 
 /* Admin user */
 
-.admin-user {
+.admin-page .admin-user {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.admin-user-icon {
+.admin-page .admin-user-icon {
     width: 42px;
     height: 42px;
 
@@ -173,16 +164,14 @@
     border-radius: 50%;
 }
 
-.admin-user strong {
+.admin-page .admin-user strong {
     display: block;
-
     color: #111936;
     font-size: 14px;
 }
 
-.admin-user span {
+.admin-page .admin-user span {
     display: block;
-
     color: #737b8e;
     font-size: 12px;
 }
@@ -191,21 +180,19 @@
    STAT CARDS
    ========================================================= */
 
-.admin-stats {
+.admin-page .admin-stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 22px;
-
     margin-bottom: 45px;
 }
 
-.admin-stat {
+.admin-page .admin-stat {
     display: flex;
     align-items: center;
     gap: 18px;
 
     background: #ffffff;
-
     padding: 28px;
 
     border: 1px solid #e1e5eb;
@@ -216,12 +203,12 @@
     transition: 0.25s ease;
 }
 
-.admin-stat:hover {
+.admin-page .admin-stat:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(5,5,74,0.1);
 }
 
-.stat-icon {
+.admin-page .stat-icon {
     width: 45px;
     height: 45px;
 
@@ -239,18 +226,15 @@
     font-size: 18px;
 }
 
-.admin-stat span {
+.admin-page .admin-stat span {
     display: block;
-
     color: #737b8e;
     font-size: 14px;
-
     margin-bottom: 7px;
 }
 
-.admin-stat strong {
+.admin-page .admin-stat strong {
     display: block;
-
     color: #08094f;
     font-size: 32px;
     font-weight: 800;
@@ -260,31 +244,27 @@
    SECTIONS
    ========================================================= */
 
-.admin-section {
+.admin-page .admin-section {
     margin-bottom: 45px;
 }
 
-.admin-section-header {
+.admin-page .admin-section-header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-
     margin-bottom: 22px;
 }
 
-.admin-section-header h2 {
+.admin-page .admin-section-header h2 {
     margin: 0 0 5px;
-
     color: #111936;
-
     font-family: "Manrope", sans-serif;
     font-size: 27px;
     font-weight: 800;
 }
 
-.admin-section-header p {
+.admin-page .admin-section-header p {
     margin: 0;
-
     color: #6d7485;
     font-size: 14px;
 }
@@ -293,13 +273,13 @@
    QUICK ACTIONS
    ========================================================= */
 
-.quick-actions {
+.admin-page .quick-actions {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.quick-action {
+.admin-page .quick-action {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -319,12 +299,12 @@
     transition: 0.25s ease;
 }
 
-.quick-action:hover {
+.admin-page .quick-action:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(5,5,74,0.1);
 }
 
-.quick-icon {
+.admin-page .quick-icon {
     width: 48px;
     height: 48px;
 
@@ -342,21 +322,19 @@
     font-size: 19px;
 }
 
-.quick-action h3 {
+.admin-page .quick-action h3 {
     margin: 0 0 5px;
-
     color: #111936;
     font-size: 16px;
 }
 
-.quick-action p {
+.admin-page .quick-action p {
     margin: 0;
-
     color: #6d7485;
     font-size: 13px;
 }
 
-.quick-action .arrow {
+.admin-page .quick-action .arrow {
     margin-left: auto;
     color: #9aa3b2;
 }
@@ -365,7 +343,7 @@
    RECENT ACTIVITY
    ========================================================= */
 
-.activity-card {
+.admin-page .activity-card {
     background: #ffffff;
 
     border: 1px solid #e1e5eb;
@@ -376,7 +354,7 @@
     overflow: hidden;
 }
 
-.activity-item {
+.admin-page .activity-item {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -386,11 +364,11 @@
     border-bottom: 1px solid #eef1f5;
 }
 
-.activity-item:last-child {
+.admin-page .activity-item:last-child {
     border-bottom: none;
 }
 
-.activity-icon {
+.admin-page .activity-icon {
     width: 40px;
     height: 40px;
 
@@ -406,40 +384,37 @@
     border-radius: 50%;
 }
 
-.activity-info {
+.admin-page .activity-info {
     flex: 1;
 }
 
-.activity-info strong {
+.admin-page .activity-info strong {
     display: block;
-
     color: #111936;
     font-size: 14px;
-
     margin-bottom: 3px;
 }
 
-.activity-info p {
+.admin-page .activity-info p {
     margin: 0;
-
     color: #7b8393;
     font-size: 12px;
 }
 
-.activity-time {
+.admin-page .activity-time {
     color: #9aa3b2;
     font-size: 12px;
     white-space: nowrap;
 }
 
-.view-all {
+.admin-page .view-all {
     color: #08094f;
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
 }
 
-.view-all:hover {
+.admin-page .view-all:hover {
     color: #08a9e0;
 }
 
@@ -449,51 +424,51 @@
 
 @media (max-width: 1100px) {
 
-    .admin-stats {
+    .admin-page .admin-stats {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .quick-actions {
+    .admin-page .quick-actions {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 850px) {
 
-    .admin-layout {
+    .admin-page .admin-layout {
         grid-template-columns: 1fr;
     }
 
-    .admin-sidebar {
+    .admin-page .admin-sidebar {
         position: static;
         height: auto;
         min-height: auto;
     }
 
-    .admin-content {
+    .admin-page .admin-content {
         padding: 30px;
     }
 }
 
 @media (max-width: 600px) {
 
-    .admin-content {
+    .admin-page .admin-content {
         padding: 22px;
     }
 
-    .admin-topbar {
+    .admin-page .admin-topbar {
         align-items: flex-start;
     }
 
-    .admin-user {
+    .admin-page .admin-user {
         display: none;
     }
 
-    .admin-stats {
+    .admin-page .admin-stats {
         grid-template-columns: 1fr;
     }
 
-    .admin-topbar h1 {
+    .admin-page .admin-topbar h1 {
         font-size: 30px;
     }
 }
