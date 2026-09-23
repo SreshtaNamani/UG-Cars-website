@@ -626,3 +626,202 @@ body.admin-page {
     background: #fff0f1;
     color: #d9363e;
 }
+
+/* =========================================================
+   ADD CAR FORM
+   ========================================================= */
+
+.admin-page .admin-car-form {
+    width: 100%;
+    max-width: 1100px;
+    background: #ffffff;
+
+    padding: 40px;
+
+    border: 1px solid #e1e5eb;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(5, 5, 74, 0.06);
+}
+
+.admin-page .admin-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 28px;
+    row-gap: 24px;
+}
+
+.admin-page .admin-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.admin-page .admin-form-group.full-width {
+    margin-top: 24px;
+}
+
+.admin-page .admin-form-group label {
+    color: #111936;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.admin-page .admin-form-group input,
+.admin-page .admin-form-group select,
+.admin-page .admin-form-group textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #d9dee8;
+    border-radius: 9px;
+
+    color: #111936;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.admin-page .admin-form-group input,
+.admin-page .admin-form-group select {
+    height: 50px;
+}
+
+.admin-page .admin-form-group input::placeholder,
+.admin-page .admin-form-group textarea::placeholder {
+    color: #9aa3b2;
+}
+
+.admin-page .admin-form-group input:hover,
+.admin-page .admin-form-group select:hover,
+.admin-page .admin-form-group textarea:hover {
+    border-color: #b9c1d0;
+}
+
+.admin-page .admin-form-group input:focus,
+.admin-page .admin-form-group select:focus,
+.admin-page .admin-form-group textarea:focus {
+    border-color: #08a9e0;
+    box-shadow: 0 0 0 3px rgba(8, 169, 224, 0.10);
+}
+
+.admin-page .admin-form-group select {
+    cursor: pointer;
+}
+
+.admin-page .admin-form-group textarea {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+/* File input */
+
+.admin-page .admin-form-group input[type="file"] {
+    height: auto;
+    padding: 12px;
+    color: #6d7485;
+    cursor: pointer;
+}
+
+/* Buttons */
+
+.admin-page .admin-form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 32px;
+    padding-top: 25px;
+
+    border-top: 1px solid #eef1f5;
+}
+
+.admin-page .admin-cancel-btn,
+.admin-page .admin-submit-btn {
+    min-height: 46px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 0 20px;
+
+    border-radius: 8px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.admin-page .admin-cancel-btn {
+    background: #f1f4f8;
+    color: #555b70;
+}
+
+.admin-page .admin-cancel-btn:hover {
+    background: #e6eaf0;
+    color: #111936;
+}
+
+.admin-page .admin-submit-btn {
+    width: auto;
+    margin: 0;
+
+    padding-left: 22px;
+    padding-right: 22px;
+
+    background: #08094f;
+    color: #ffffff;
+
+    border: none;
+}
+
+.admin-page .admin-submit-btn:hover {
+    background: #08a9e0;
+}
+
+/* =========================================================
+   ADD CAR RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .admin-page .admin-car-form {
+        padding: 25px;
+        border-radius: 14px;
+    }
+
+    .admin-page .admin-form-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .admin-page .admin-form-buttons {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .admin-page .admin-cancel-btn,
+    .admin-page .admin-submit-btn {
+        width: 100%;
+    }
+}
