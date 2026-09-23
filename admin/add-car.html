@@ -70,6 +70,7 @@
         <!-- MAIN CONTENT -->
         <main class="admin-content">
 
+            <!-- TOP BAR -->
             <div class="admin-topbar">
 
                 <div>
@@ -93,144 +94,296 @@
             </div>
 
 
-            <!-- ADD CAR FORM -->
+            <!-- ADD CAR SECTION -->
             <section class="admin-section">
 
                 <div class="admin-section-header">
 
                     <div>
                         <h2>Vehicle Details</h2>
-                        <p>Enter the details of the vehicle you want to add.</p>
+                        <p>
+                            Add the information below to list a new vehicle
+                            in your inventory.
+                        </p>
                     </div>
 
                 </div>
 
 
-                <form class="admin-car-form">
+                <!-- ADD CAR FORM -->
+                <form
+                    class="admin-car-form"
+                    id="admin-car-form"
+                >
 
+                    <!-- TWO COLUMN FORM -->
                     <div class="admin-form-grid">
 
+                        <!-- CAR NAME -->
                         <div class="admin-form-group">
-                            <label for="carName">Car Name</label>
+
+                            <label for="car-name">
+                                Car Name
+                            </label>
+
                             <input
                                 type="text"
-                                id="carName"
-                                placeholder="e.g. Hyundai Creta"
+                                id="car-name"
+                                placeholder="e.g. Hyundai Creta SX"
                                 required>
+
                         </div>
 
 
+                        <!-- BRAND -->
                         <div class="admin-form-group">
-                            <label for="brand">Brand</label>
-                            <select id="brand" required>
-                                <option value="">Select brand</option>
-                                <option value="tata">Tata</option>
-                                <option value="hyundai">Hyundai</option>
-                                <option value="maruti">Maruti Suzuki</option>
-                                <option value="mahindra">Mahindra</option>
-                                <option value="toyota">Toyota</option>
-                                <option value="honda">Honda</option>
-                                <option value="kia">Kia</option>
-                                <option value="mg">MG</option>
-                                <option value="volkswagen">Volkswagen</option>
-                                <option value="skoda">Skoda</option>
+
+                            <label for="car-brand">
+                                Brand
+                            </label>
+
+                            <select id="car-brand" required>
+
+                                <option value="">
+                                    Select brand
+                                </option>
+
+                                <option value="tata">
+                                    Tata
+                                </option>
+
+                                <option value="hyundai">
+                                    Hyundai
+                                </option>
+
+                                <option value="maruti">
+                                    Maruti Suzuki
+                                </option>
+
+                                <option value="mahindra">
+                                    Mahindra
+                                </option>
+
+                                <option value="toyota">
+                                    Toyota
+                                </option>
+
+                                <option value="honda">
+                                    Honda
+                                </option>
+
+                                <option value="kia">
+                                    Kia
+                                </option>
+
+                                <option value="mg">
+                                    MG
+                                </option>
+
+                                <option value="volkswagen">
+                                    Volkswagen
+                                </option>
+
+                                <option value="skoda">
+                                    Skoda
+                                </option>
+
                             </select>
+
                         </div>
 
 
+                        <!-- YEAR -->
                         <div class="admin-form-group">
-                            <label for="year">Year</label>
+
+                            <label for="car-year">
+                                Year
+                            </label>
+
                             <input
                                 type="number"
-                                id="year"
+                                id="car-year"
                                 placeholder="e.g. 2023"
                                 min="1990"
                                 max="2030"
                                 required>
+
                         </div>
 
 
+                        <!-- PRICE -->
                         <div class="admin-form-group">
-                            <label for="price">Price</label>
+
+                            <label for="car-price">
+                                Price
+                            </label>
+
                             <input
                                 type="text"
-                                id="price"
+                                id="car-price"
                                 placeholder="e.g. ₹12.50 Lakh"
                                 required>
+
                         </div>
 
 
+                        <!-- FUEL -->
                         <div class="admin-form-group">
-                            <label for="fuel">Fuel Type</label>
-                            <select id="fuel" required>
-                                <option value="">Select fuel type</option>
-                                <option value="petrol">Petrol</option>
-                                <option value="diesel">Diesel</option>
-                                <option value="cng">CNG</option>
-                                <option value="electric">Electric</option>
-                                <option value="hybrid">Hybrid</option>
+
+                            <label for="car-fuel">
+                                Fuel Type
+                            </label>
+
+                            <select id="car-fuel" required>
+
+                                <option value="">
+                                    Select fuel type
+                                </option>
+
+                                <option value="petrol">
+                                    Petrol
+                                </option>
+
+                                <option value="diesel">
+                                    Diesel
+                                </option>
+
+                                <option value="cng">
+                                    CNG
+                                </option>
+
+                                <option value="electric">
+                                    Electric
+                                </option>
+
+                                <option value="hybrid">
+                                    Hybrid
+                                </option>
+
                             </select>
+
                         </div>
 
 
+                        <!-- TRANSMISSION -->
                         <div class="admin-form-group">
-                            <label for="transmission">Transmission</label>
-                            <select id="transmission" required>
-                                <option value="">Select transmission</option>
-                                <option value="manual">Manual</option>
-                                <option value="automatic">Automatic</option>
+
+                            <label for="car-transmission">
+                                Transmission
+                            </label>
+
+                            <select
+                                id="car-transmission"
+                                required
+                            >
+
+                                <option value="">
+                                    Select transmission
+                                </option>
+
+                                <option value="manual">
+                                    Manual
+                                </option>
+
+                                <option value="automatic">
+                                    Automatic
+                                </option>
+
                             </select>
+
                         </div>
 
 
+                        <!-- KILOMETERS -->
                         <div class="admin-form-group">
-                            <label for="kilometers">Kilometers</label>
+
+                            <label for="car-kilometers">
+                                Kilometers
+                            </label>
+
                             <input
                                 type="number"
-                                id="kilometers"
+                                id="car-kilometers"
                                 placeholder="e.g. 25000"
                                 min="0"
                                 required>
+
                         </div>
 
 
+                        <!-- STATUS -->
                         <div class="admin-form-group">
-                            <label for="status">Status</label>
-                            <select id="status" required>
-                                <option value="">Select status</option>
-                                <option value="available">Available</option>
-                                <option value="sold">Sold</option>
+
+                            <label for="car-status">
+                                Status
+                            </label>
+
+                            <select id="car-status" required>
+
+                                <option value="">
+                                    Select status
+                                </option>
+
+                                <option value="available">
+                                    Available
+                                </option>
+
+                                <option value="sold">
+                                    Sold
+                                </option>
+
                             </select>
+
                         </div>
 
                     </div>
 
 
+                    <!-- DESCRIPTION -->
                     <div class="admin-form-group full-width">
-                        <label for="description">Description</label>
+
+                        <label for="car-description">
+                            Description
+                        </label>
+
                         <textarea
-                            id="description"
+                            id="car-description"
                             rows="5"
-                            placeholder="Enter a short description of the vehicle..."></textarea>
+                            placeholder="Enter a short description of the vehicle..."
+                        ></textarea>
+
                     </div>
 
 
+                    <!-- IMAGE -->
                     <div class="admin-form-group full-width">
-                        <label for="carImage">Car Image</label>
+
+                        <label for="carImage">
+                            Car Image
+                        </label>
+
                         <input
                             type="file"
                             id="carImage"
                             accept="image/*">
+
                     </div>
 
 
+                    <!-- BUTTONS -->
                     <div class="admin-form-buttons">
 
-                        <a href="inventory.html" class="admin-cancel-btn">
+                        <a
+                            href="inventory.html"
+                            class="admin-cancel-btn"
+                        >
                             Cancel
                         </a>
 
-                        <button type="submit" class="admin-submit-btn">
+                        <button
+                            type="submit"
+                            class="admin-submit-btn"
+                        >
                             <i class="fa-solid fa-plus"></i>
                             Add Car
                         </button>
@@ -244,6 +397,10 @@
         </main>
 
     </div>
+
+
+    <!-- ADMIN JAVASCRIPT -->
+    <script src="admin.js"></script>
 
 </body>
 </html>
