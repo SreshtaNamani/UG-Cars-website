@@ -1,201 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin Dashboard | UG Cars</title>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="../CSS/style.css">
-        <link rel="stylesheet" href="admin.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | UG Cars</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main Website CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- Admin CSS -->
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+
 <body class="admin-page">
+
     <div class="admin-layout">
+
+
+        <!-- =========================================
+             SIDEBAR
+        ========================================== -->
+
         <aside class="admin-sidebar">
+
+            <!-- LOGO -->
             <div class="admin-logo">
-                <img src="../image.png" alt="UG Cars">
+
+                <img
+                    src="../image.png"
+                    alt="UG Cars"
+                >
+
             </div>
+
+
+            <!-- NAVIGATION -->
             <nav class="admin-nav">
-                <a href="admin.html" class="active">
+
+                <!-- Dashboard -->
+                <a
+                    href="admin.html"
+                    class="active"
+                >
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Dashboard</span>
                 </a>
+
+
+                <!-- Inventory -->
                 <a href="inventory.html">
+
                     <i class="fa-solid fa-car"></i>
+
                     <span>Inventory</span>
+
                 </a>
+
+
+                <!-- Finance -->
                 <a href="#">
+
                     <i class="fa-solid fa-file-invoice-dollar"></i>
+
                     <span>Finance Enquiries</span>
+
                 </a>
+
+
+                <!-- Contact -->
                 <a href="#">
+
                     <i class="fa-solid fa-envelope"></i>
+
                     <span>Contact Enquiries</span>
+
                 </a>
+
             </nav>
+
+
+            <!-- BACK TO WEBSITE -->
             <div class="admin-sidebar-bottom">
-                <a href="index.html">
+
+                <a href="../index.html">
+
                     <i class="fa-solid fa-arrow-left"></i>
+
                     <span>Back to Website</span>
+
                 </a>
+
             </div>
+
         </aside>
+
+
+
+        <!-- =========================================
+             MAIN CONTENT
+        ========================================== -->
+
         <main class="admin-content">
+
+
             <!-- TOP BAR -->
             <div class="admin-topbar">
+
                 <div>
-                    <p class="admin-welcome">Welcome back</p>
-                    <h1>Dashboard</h1>
+
+                    <p class="admin-welcome">
+                        Welcome back
+                    </p>
+
+                    <h1>
+                        Dashboard
+                    </h1>
+
                 </div>
+
+
+                <!-- ADMIN USER -->
                 <div class="admin-user">
+
                     <div class="admin-user-icon">
+
                         <i class="fa-solid fa-user"></i>
+
                     </div>
+
+
                     <div>
-                        <strong>Admin</strong>
-                        <span>UG Cars</span>
+
+                        <strong>
+                            Admin
+                        </strong>
+
+                        <span>
+                            UG Cars
+                        </span>
+
                     </div>
+
                 </div>
+
             </div>
-            <!-- STATS -->
+
+
+
+            <!-- =========================================
+                 STATISTICS
+            ========================================== -->
+
             <section class="admin-stats">
+
+
+                <!-- TOTAL CARS -->
                 <div class="admin-stat">
+
                     <div class="stat-icon">
+
                         <i class="fa-solid fa-car"></i>
+
                     </div>
+
                     <div>
-                        <span>Total Cars</span>
-                        <strong>24</strong>
+
+                        <span>
+                            Total Cars
+                        </span>
+
+                        <strong>
+                            24
+                        </strong>
+
                     </div>
+
                 </div>
+
+
+
+                <!-- AVAILABLE CARS -->
                 <div class="admin-stat">
+
                     <div class="stat-icon">
+
                         <i class="fa-solid fa-circle-check"></i>
+
                     </div>
+
                     <div>
-                        <span>Available Cars</span>
-                        <strong>18</strong>
+
+                        <span>
+                            Available Cars
+                        </span>
+
+                        <strong>
+                            18
+                        </strong>
+
                     </div>
+
                 </div>
+
+
+
+                <!-- CARS SOLD -->
                 <div class="admin-stat">
+
                     <div class="stat-icon">
+
                         <i class="fa-solid fa-tag"></i>
+
                     </div>
+
                     <div>
-                        <span>Cars Sold</span>
-                        <strong>6</strong>
+
+                        <span>
+                            Cars Sold
+                        </span>
+
+                        <strong>
+                            6
+                        </strong>
+
                     </div>
+
                 </div>
+
+
+
+                <!-- NEW ENQUIRIES -->
                 <div class="admin-stat">
+
                     <div class="stat-icon">
+
                         <i class="fa-solid fa-bell"></i>
+
                     </div>
+
                     <div>
-                        <span>New Enquiries</span>
-                        <strong>12</strong>
+
+                        <span>
+                            New Enquiries
+                        </span>
+
+                        <strong>
+                            12
+                        </strong>
+
                     </div>
+
                 </div>
+
             </section>
-            <!-- QUICK ACTIONS -->
+
+
+
+            <!-- =========================================
+                 QUICK ACTIONS
+            ========================================== -->
+
             <section class="admin-section">
+
+
+                <!-- SECTION HEADER -->
                 <div class="admin-section-header">
+
                     <div>
-                        <h2>Quick Actions</h2>
-                        <p>Manage your dealership quickly.</p>
+
+                        <h2>
+                            Quick Actions
+                        </h2>
+
+                        <p>
+                            Manage your dealership quickly.
+                        </p>
+
                     </div>
+
                 </div>
+
+
+
+                <!-- ACTIONS -->
                 <div class="quick-actions">
-                    <a href="#" class="quick-action">
+
+
+                    <!-- ADD CAR -->
+                    <a
+                        href="add-car.html"
+                        class="quick-action"
+                    >
+
                         <div class="quick-icon">
+
                             <i class="fa-solid fa-plus"></i>
+
                         </div>
+
+
                         <div>
-                            <h3>Add New Car</h3>
-                            <p>Add a vehicle to your inventory.</p>
+
+                            <h3>
+                                Add New Car
+                            </h3>
+
+                            <p>
+                                Add a vehicle to your inventory.
+                            </p>
+
                         </div>
-                        <i class="fa-solid fa-chevron-right arrow"></i>
+
+
+                        <i
+                            class="fa-solid fa-chevron-right arrow"
+                        ></i>
+
                     </a>
-                    <a href="#" class="quick-action">
+
+
+
+                    <!-- INVENTORY -->
+                    <a
+                        href="inventory.html"
+                        class="quick-action"
+                    >
+
                         <div class="quick-icon">
+
                             <i class="fa-solid fa-car"></i>
+
                         </div>
+
+
                         <div>
-                            <h3>Manage Inventory</h3>
-                            <p>View and manage your cars.</p>
+
+                            <h3>
+                                Manage Inventory
+                            </h3>
+
+                            <p>
+                                View and manage your cars.
+                            </p>
+
                         </div>
-                        <i class="fa-solid fa-chevron-right arrow"></i>
+
+
+                        <i
+                            class="fa-solid fa-chevron-right arrow"
+                        ></i>
+
                     </a>
-                    <a href="#" class="quick-action">
+
+
+
+                    <!-- ENQUIRIES -->
+                    <a
+                        href="#"
+                        class="quick-action"
+                    >
+
                         <div class="quick-icon">
+
                             <i class="fa-solid fa-envelope"></i>
+
                         </div>
+
+
                         <div>
-                            <h3>View Enquiries</h3>
-                            <p>Check recent customer enquiries.</p>
+
+                            <h3>
+                                View Enquiries
+                            </h3>
+
+                            <p>
+                                Check recent customer enquiries.
+                            </p>
+
                         </div>
-                        <i class="fa-solid fa-chevron-right arrow"></i>
+
+
+                        <i
+                            class="fa-solid fa-chevron-right arrow"
+                        ></i>
+
                     </a>
+
                 </div>
+
             </section>
-            <!-- RECENT ACTIVITY -->
+
+
+
+            <!-- =========================================
+                 RECENT ACTIVITY
+            ========================================== -->
+
             <section class="admin-section">
+
+
+                <!-- SECTION HEADER -->
                 <div class="admin-section-header">
+
                     <div>
-                        <h2>Recent Activity</h2>
-                        <p>Latest activity on UG Cars.</p>
+
+                        <h2>
+                            Recent Activity
+                        </h2>
+
+                        <p>
+                            Latest activity on UG Cars.
+                        </p>
+
                     </div>
-                    <a href="#" class="view-all">View All</a>
+
+
+                    <a
+                        href="#"
+                        class="view-all"
+                    >
+                        View All
+                    </a>
+
                 </div>
+
+
+
+                <!-- ACTIVITY CARD -->
                 <div class="activity-card">
+
+
+                    <!-- ACTIVITY 1 -->
                     <div class="activity-item">
+
                         <div class="activity-icon">
+
                             <i class="fa-solid fa-car"></i>
+
                         </div>
+
+
                         <div class="activity-info">
-                            <strong>New vehicle added</strong>
-                            <p>Hyundai Creta SX was added to inventory.</p>
+
+                            <strong>
+                                New vehicle added
+                            </strong>
+
+                            <p>
+                                Hyundai Creta SX was added to inventory.
+                            </p>
+
                         </div>
-                        <span class="activity-time">Today</span>
+
+
+                        <span class="activity-time">
+                            Today
+                        </span>
+
                     </div>
+
+
+
+                    <!-- ACTIVITY 2 -->
                     <div class="activity-item">
+
                         <div class="activity-icon">
-                            <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                            <i class="fa-solid fa-car"></i>
+
                         </div>
+
+
                         <div class="activity-info">
-                            <strong>New finance enquiry</strong>
-                            <p>A customer submitted a finance enquiry.</p>
+
+                            <strong>
+                                Vehicle updated
+                            </strong>
+
+                            <p>
+                                Tata Nexon details were updated.
+                            </p>
+
                         </div>
-                        <span class="activity-time">Today</span>
+
+
+                        <span class="activity-time">
+                            Yesterday
+                        </span>
+
                     </div>
+
+
+
+                    <!-- ACTIVITY 3 -->
                     <div class="activity-item">
+
                         <div class="activity-icon">
-                            <i class="fa-solid fa-car-side"></i>
+
+                            <i class="fa-solid fa-envelope"></i>
+
                         </div>
+
+
                         <div class="activity-info">
-                            <strong>Sell-car enquiry received</strong>
-                            <p>A customer wants to sell their vehicle.</p>
+
+                            <strong>
+                                New enquiry received
+                            </strong>
+
+                            <p>
+                                A new customer enquiry was received.
+                            </p>
+
                         </div>
-                        <span class="activity-time">Yesterday</span>
+
+
+                        <span class="activity-time">
+                            2 days ago
+                        </span>
+
                     </div>
+
+
+
+                    <!-- ACTIVITY 4 -->
                     <div class="activity-item">
+
                         <div class="activity-icon">
-                            <i class="fa-solid fa-check"></i>
+
+                            <i class="fa-solid fa-tag"></i>
+
                         </div>
+
+
                         <div class="activity-info">
-                            <strong>Vehicle marked as sold</strong>
-                            <p>Tata Nexon was marked as sold.</p>
+
+                            <strong>
+                                Vehicle marked as sold
+                            </strong>
+
+                            <p>
+                                A vehicle was marked as sold.
+                            </p>
+
                         </div>
-                        <span class="activity-time">2 days ago</span>
+
+
+                        <span class="activity-time">
+                            3 days ago
+                        </span>
+
                     </div>
+
                 </div>
+
             </section>
+
         </main>
+
     </div>
+
+
+    <!-- ADMIN JAVASCRIPT -->
     <script src="admin.js"></script>
+
 </body>
+
 </html>

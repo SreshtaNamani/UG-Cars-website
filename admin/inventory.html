@@ -74,7 +74,10 @@
             <div class="admin-topbar">
 
                 <div>
-                    <p class="admin-welcome">Manage your dealership</p>
+                    <p class="admin-welcome">
+                        Manage your dealership
+                    </p>
+
                     <h1>Inventory</h1>
                 </div>
 
@@ -94,17 +97,24 @@
             </div>
 
 
-            <!-- INVENTORY HEADER -->
+            <!-- INVENTORY SECTION -->
             <section class="admin-section">
 
                 <div class="admin-section-header">
 
                     <div>
                         <h2>Vehicles</h2>
-                        <p>View and manage vehicles in your inventory.</p>
+
+                        <p>
+                            View and manage vehicles in your inventory.
+                        </p>
                     </div>
 
-                    <a href="add-car.html" class="admin-add-car">
+
+                    <a
+                        href="add-car.html"
+                        class="admin-add-car"
+                    >
                         <i class="fa-solid fa-plus"></i>
                         Add New Car
                     </a>
@@ -120,108 +130,26 @@
                         <table class="inventory-table">
 
                             <thead>
+
                                 <tr>
+
                                     <th>Vehicle</th>
+
                                     <th>Price</th>
+
                                     <th>Fuel</th>
+
                                     <th>Status</th>
+
                                     <th>Actions</th>
+
                                 </tr>
+
                             </thead>
 
-                            <tbody>
 
-                                <tr>
-
-                                    <td>
-                                        <div class="inventory-vehicle">
-
-                                            <img
-                                                src="../images/Nexon.jpeg"
-                                                alt="Tata Nexon">
-
-                                            <div>
-                                                <strong>Tata Nexon</strong>
-                                                <span>2023 • Petrol</span>
-                                            </div>
-
-                                        </div>
-                                    </td>
-
-                                    <td>₹9.50 Lakh</td>
-
-                                    <td>Petrol</td>
-
-                                    <td>
-                                        <span class="inventory-status available">
-                                            Available
-                                        </span>
-                                    </td>
-
-                                    <td>
-                                        <div class="inventory-actions">
-
-                                            <button type="button"
-                                                class="inventory-edit">
-                                                <i class="fa-solid fa-pen"></i>
-                                            </button>
-
-                                            <button type="button"
-                                                class="inventory-delete">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-
-                                        </div>
-                                    </td>
-
-                                </tr>
-
-
-                                <tr>
-
-                                    <td>
-                                        <div class="inventory-vehicle">
-
-                                            <img
-                                                src="../images/Creta.jpeg.avif"
-                                                alt="Hyundai Creta">
-
-                                            <div>
-                                                <strong>Hyundai Creta</strong>
-                                                <span>2023 • Petrol</span>
-                                            </div>
-
-                                        </div>
-                                    </td>
-
-                                    <td>₹14.20 Lakh</td>
-
-                                    <td>Petrol</td>
-
-                                    <td>
-                                        <span class="inventory-status available">
-                                            Available
-                                        </span>
-                                    </td>
-
-                                    <td>
-                                        <div class="inventory-actions">
-
-                                            <button type="button"
-                                                class="inventory-edit">
-                                                <i class="fa-solid fa-pen"></i>
-                                            </button>
-
-                                            <button type="button"
-                                                class="inventory-delete">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-
-                                        </div>
-                                    </td>
-
-                                </tr>
-
+                            <tbody id="inventory-table-body">
+                                <!-- Cars will be inserted here by JavaScript -->
                             </tbody>
 
                         </table>
@@ -235,6 +163,9 @@
         </main>
 
     </div>
+
+
+    <script src="admin.js"></script>
 
 </body>
 </html>
