@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Login | UG Cars</title><link rel="stylesheet" href="../assets/css/style.css"></head><body>
+<div class="login"><form id="lf"><div class="lg"><img src="../assets/images/logo.png" alt="UG Cars"></div><h1>Admin Login</h1><p>Sign in to manage your inventory.</p>
+<div class="field"><label>Username</label><input id="u" autocomplete="username" required autofocus></div><div class="field"><label>Password</label><input id="p" type="password" autocomplete="current-password" required></div>
+<div class="err" id="e"></div><button class="btn blue" style="width:100%">Sign In</button></form></div>
+<script src="../assets/js/app.js"></script><script>
+const USER='admin',PASS='ugcars@2026';
+if(sessionStorage.getItem(UG.AUTH))location.replace('dashboard.html');
+document.getElementById('lf').onsubmit=e=>{e.preventDefault();
+ if(document.getElementById('u').value.trim()===USER&&document.getElementById('p').value===PASS){sessionStorage.setItem(UG.AUTH,'1');location.href='dashboard.html'}
+ else document.getElementById('e').textContent='Incorrect username or password.'};
+</script></body></html>
