@@ -1,0 +1,12 @@
+const {$,$$,esc}=UG,all=UG.cars(),id=+new URLSearchParams(location.search).get('id'),c=all.find(x=>x.id===id);
+if(!c){$('#det').innerHTML='<div class="empty" style="margin:40px 0"><h3>Car not found</h3><a class="btn" href="index.html">Back to inventory</a></div>';$('.crumb').style.display='none'}
+else{const n=`${c.brand} ${c.model}`;document.title=n+' | UG Cars';$('#bc').textContent=n;
+$('#det').innerHTML=`<div class="det"><div><img class="main-img" id="mi" src="${c.images[0]?UG.src(c.images[0]):''}" alt="${esc(n)}"><div class="thumbs">${c.images.map((s,i)=>`<img src="${UG.src(s)}" class="${i?'':'on'}" alt="View ${i+1}">`).join('')}</div></div>
+<div><span class="pill ${c.status}">${c.status}</span><h1>${esc(n)}</h1><div class="price">${UG.inr(c.price)}</div><p style="color:#667085">${c.year} • ${esc(c.fuel)} • ${esc(c.trans)}</p>
+<div class="acts" style="margin-top:18px"><button class="btn blue" id="enq">Enquire Now</button><a class="btn" href="tel:${UG.site.phone.replace(/\s/g,'')}"><i class="fa-solid fa-phone"></i> Call Dealer</a><a class="btn line" target="_blank" href="https://wa.me/${UG.site.phone.replace(/\D/g,'')}?text=${encodeURIComponent('Hi, I am interested in the '+n+' ('+c.year+')')}"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
+<h3 style="margin-top:28px">Specifications</h3><div class="spec"><div><small>Year</small><b>${c.year}</b></div><div><small>Fuel</small><b>${esc(c.fuel)}</b></div><div><small>Transmission</small><b>${esc(c.trans)}</b></div><div><small>Kilometres</small><b>${Number(c.km).toLocaleString('en-IN')} km</b></div><div><small>Owners</small><b>${esc(c.owners)}</b></div><div><small>Location</small><b>${esc(c.city)}</b></div></div>
+${c.desc?`<p>${esc(c.desc)}</p>`:''}${c.features.length?`<h3 style="margin-top:24px">Features</h3><div class="feat">${c.features.map(f=>`<div>${esc(f)}</div>`).join('')}</div>`:''}</div></div>`;
+$$('.thumbs img').forEach(t=>t.onclick=()=>{$('#mi').src=t.src;$$('.thumbs img').forEach(x=>x.classList.remove('on'));t.classList.add('on')});
+$('#enq').onclick=()=>{$('#mc').textContent=n;$('#m').classList.add('open')};$('#x').onclick=()=>$('#m').classList.remove('open');
+$('#f').onsubmit=e=>{e.preventDefault();$('#m').classList.remove('open');e.target.reset();UG.toast('Thank you! Our team will contact you shortly.')};
+const sim=all.filter(x=>x.id!==c.id&&x.status!=='Sold').slice(0,3);$('#sim').innerHTML=sim.length?sim.map(x=>UG.card(x)).join(''):'<div class="empty">No other cars available right now.</div>'}
