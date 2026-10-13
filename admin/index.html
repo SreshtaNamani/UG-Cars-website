@@ -3,9 +3,8 @@
 <div class="field"><label>Username</label><input id="u" autocomplete="username" required autofocus></div><div class="field"><label>Password</label><input id="p" type="password" autocomplete="current-password" required></div>
 <div class="err" id="e"></div><button class="btn blue" style="width:100%">Sign In</button></form></div>
 <script src="../assets/js/app.js"></script><script>
-const USER='admin',PASS='ugcars@2026';
 if(sessionStorage.getItem(UG.AUTH))location.replace('dashboard.html');
-document.getElementById('lf').onsubmit=e=>{e.preventDefault();
- if(document.getElementById('u').value.trim()===USER&&document.getElementById('p').value===PASS){sessionStorage.setItem(UG.AUTH,'1');location.href='dashboard.html'}
- else document.getElementById('e').textContent='Incorrect username or password.'};
+document.getElementById('lf').onsubmit=async e=>{e.preventDefault();const b=e.target.querySelector('button'),er=document.getElementById('e');b.disabled=true;er.textContent='';
+ try{const r=await UG.api('login',{method:'POST',body:{user:document.getElementById('u').value.trim(),pass:document.getElementById('p').value}});sessionStorage.setItem(UG.AUTH,r.token);location.href='dashboard.html'}
+ catch(x){er.textContent=x.message==='Failed to fetch'?'Server not running. Start it with start.bat':x.message}b.disabled=false};
 </script></body></html>
