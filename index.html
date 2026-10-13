@@ -1,46 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>UG Cars | Used &amp; Genuine Pre-owned Cars</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <div id="header"></div>
-        <section class="hero"><div class="wrap">
-            <h1>Find your next <span>genuine</span> pre-owned car</h1>
-            <p>Quality-checked used cars with transparent pricing, easy finance and hassle-free paperwork in Hyderabad.</p>
-            <a class="btn blue" href="#inventory">Browse Cars <i class="fa-solid fa-arrow-down"></i></a>
-            <div class="stats">
-                <div>
-                    <b id="s1">0</b><span>Cars in stock</span>
-                </div>
-                <div>
-                    <b>100%</b><span>Quality checked</span>
-                </div>
-                <div>
-                    <b>RC</b><span>Transfer assistance</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="inventory">
-        <div class="wrap layout">
-            <aside class="filters">
-                <h3>Filters <button id="reset">Reset</button></h3>
-                <div class="fs">
-                    <h4>Brand</h4>
-                    <div id="fBrand"></div>
-                </div>
-                <div class="fs">
-                    <h4>Fuel Type</h4>
-                    <div id="fFuel"></div>
-                </div>
-                <div class="fs">
-                    <h4>Transmission</h4>
-                    <div id="fTrans"></div>
-                </div>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UG Cars | Used &amp; Genuine Pre-owned Cars</title><link rel="stylesheet" href="assets/css/style.css"></head><body>
+<div id="header"></div>
+<section class="hero"><div class="wrap"><h1>Find your next <span>genuine</span> pre-owned car</h1><p>Quality-checked used cars with transparent pricing, easy finance and hassle-free paperwork in Hyderabad.</p><a class="btn blue" href="#inventory">Browse Cars <i class="fa-solid fa-arrow-down"></i></a>
+<div class="stats"><div><b id="s1">0</b><span>Cars in stock</span></div><div><b>100%</b><span>Quality checked</span></div><div><b>RC</b><span>Transfer assistance</span></div></div></div></section>
+<section id="inventory"><div class="wrap layout">
+<aside class="filters"><h3>Filters <button id="reset">Reset</button></h3>
+<div class="fs"><h4>Brand</h4><div id="fBrand"></div></div><div class="fs"><h4>Fuel Type</h4><div id="fFuel"></div></div><div class="fs"><h4>Transmission</h4><div id="fTrans"></div></div>
 <div class="fs"><h4>Year</h4><label><input type="radio" name="yr" value="0" checked> Any</label><label><input type="radio" name="yr" value="2024"> 2024 &amp; above</label><label><input type="radio" name="yr" value="2022"> 2022 &amp; above</label><label><input type="radio" name="yr" value="2020"> 2020 &amp; above</label><label><input type="radio" name="yr" value="2018"> 2018 &amp; above</label><label><input type="radio" name="yr" value="2016"> 2016 &amp; above</label></div>
 <div class="fs"><h4>Max Price: <span id="pv"></span></h4><input type="range" id="price" min="100000" step="50000"></div></aside>
 <div><div class="toolbar"><div><h2>Available Cars</h2><small id="count"></small></div><select id="sort"><option value="new">Newest first</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="year">Year: newest</option><option value="km">Lowest km</option></select></div><div class="grid" id="grid"></div></div></div></section>
