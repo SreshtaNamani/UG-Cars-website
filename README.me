@@ -17,3 +17,26 @@ A pre-owned car marketplace website built to showcase available vehicles, filter
 - Backend integration
 - User authentication
 - Database support
+
+# UG Cars – Pre-owned Cars Website
+Open `index.html` in a browser (no install needed). Internet is used for fonts, icons and the map.
+
+**Admin:** open `admin/index.html` (or the "Admin" link in the footer)
+- Username: `admin`  Password: `ugcars@2026` (change in `admin/index.html`)
+
+## Structure
+```
+index.html            Home: hero, filters + inventory, why us, testimonials, contact
+car-details.html      Gallery, specs, features, enquiry, similar cars
+sell-car.html / finance.html / exchange.html  Forms saved to admin Enquiries
+admin/index.html      Admin login
+admin/dashboard.html  Add / edit / delete cars, search, status, stats
+admin/enquiries.html  Customer leads with status tracking
+assets/css/style.css  Styles (colours from the logo)
+assets/js/app.js      Data store, helpers, shared header/footer
+assets/js/home.js     Filters, search, sorting
+assets/js/details.js  Car details page
+assets/js/admin.js    Admin CRUD
+assets/images/        Logo, favicon, car photos
+```
+Data is saved in the browser (localStorage), so cars added in admin show on the website in the same browser. Production use needs a real backend and server-side login.
